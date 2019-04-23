@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "apollo-server-koa": "^2.4.8",
+    "graphql": "^14.2.1",
+    "koa": "^2.7.0",
+    "mongoose": "^5.5.2"
+  },
+  "name": "apollo",
+  "version": "1.0.0",
+  "description": "apollo kit",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "@babel/runtime": "^7.4.3",
+    "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon src/index.js",
+    "start:ci": "node src/index.js"
+  },
+  "author": "vincen",
+  "license": "ISC"
+}
