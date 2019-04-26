@@ -5,7 +5,6 @@ export const resolvers = {
     info:  async (_, { id }, { dataSources }) =>
         dataSources.InfoAPI.findInfoByID({id})
   },
-
   Mutation: {
     addInfo: async (_, { info } , { dataSources }) => {
         let result = dataSources.InfoAPI.addInfo(info)
@@ -50,6 +49,5 @@ export const resolvers = {
         }
     },
   },
-
 //   Info: {}
 };

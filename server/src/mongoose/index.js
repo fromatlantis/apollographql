@@ -3,9 +3,10 @@ import mongoose from "mongoose";
 import config from "../config";
 
 // schema
-import { InfoSchema } from './schema'
-
+import { InfoSchema } from './schema/info'
+import { TaskSchema } from './schema/task'
 mongoose.model("Info", InfoSchema);
+mongoose.model("Task", TaskSchema);
 // 链接mongodb
 export const createStore = () => {
   mongoose.set("debug", true);
