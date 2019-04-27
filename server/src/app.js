@@ -1,5 +1,5 @@
 import Koa from 'koa'
-import { ApolloServer, gql }  from 'apollo-server-koa'
+import { ApolloServer }  from 'apollo-server-koa'
 import { createStore } from './mongoose'
 import { dataSources } from './datasources'
 
